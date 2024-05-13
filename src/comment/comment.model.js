@@ -7,11 +7,6 @@ const CommentSchema = mongoose.Schema({
         required: [true, "The name is mandatory"]
     },
 
-    title: {
-        type: String,
-        required: [true, "The title is mandatory"]
-    },
-
     description: {
         type: String,
         required: [true, "The description is mandatory"]

@@ -2,8 +2,8 @@ import Comment from "./comment.model.js";
 
 
 export const newComment = async(req, res) =>{
-    const { name, title, description} = req.body;
-    const comment = new Comment({name, title, description});
+    const { name, description} = req.body;
+    const comment = new Comment({name, description});
 
     await comment.save();
 

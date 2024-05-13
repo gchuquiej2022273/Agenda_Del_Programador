@@ -10,7 +10,6 @@ router.post(
     "/",
     [
         check("name", "the name is mandatory").not().isEmpty(),
-        check("title", "the title is mandatory").not().isEmpty(),
         check("description", "the description is mandatory").not().isEmpty(),
         check("name").custom(isNamevalid),
         validarCampo
